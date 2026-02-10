@@ -1,3 +1,5 @@
+-- Sophia Madigan's query
+-- it finds sales over $300,000 and over 3 acres
 SELECT
 	defaultdb.enterprise.parcels_core.pin,
 	defaultdb.enterprise.parcels_core.acres_poly,
@@ -12,4 +14,4 @@ LEFT JOIN
 ON defaultdb.enterprise.parcel_sales.pin =
 	defaultdb.enterprise.parcels_core.pin
 WHERE
-	defaultdb.enterprise.parcel_sales.sale_value > 300000 AND defaultdb.enterprise.parcels_core.acres_poly < 1;
+	defaultdb.enterprise.parcel_sales.sale_value > 300000 AND defaultdb.enterprise.parcels_core.acres_poly < 3;
